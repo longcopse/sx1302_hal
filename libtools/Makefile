@@ -7,8 +7,8 @@ CROSS_COMPILE ?=
 CC := $(CROSS_COMPILE)gcc
 AR := $(CROSS_COMPILE)ar
 
-CFLAGS := -O2 -Wall -Wextra -std=c99 -Iinc -I.
-CFLAGS+="-Iinc -Isx1302/libtools/inc"
+CFLAGS := -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc 
+
 OBJDIR = obj
 INCLUDES = $(wildcard inc/*.h)
 
